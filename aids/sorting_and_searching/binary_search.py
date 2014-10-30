@@ -4,9 +4,10 @@ recrusively and iteratively
 
 Assumption: Array is sorted
 
-Running Time complexity: O(log n)
+Time complexity: O(log n)
 
 '''
+
 
 def binary_search_recursive(arr, left, right, value):
     '''
@@ -38,5 +39,3 @@ def binary_search_iterative(arr, left, right, value):
         else:
             left = middle + 1
     return None
-
-          
