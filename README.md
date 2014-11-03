@@ -6,11 +6,11 @@ Implementation of various algorithms, data structures, interview questions and c
 
 # Tests
 
-To run individual tests, under the pypoker parent folder,
+To run individual tests, under the aids parent folder,
 
     $ python -m unittest tests.<module name>
 
-To run all the tests, under the pypoker parent folder, just do:
+To run all the tests, under the aids parent folder, just do:
 
     $ python -m unittest discover tests -v
 
