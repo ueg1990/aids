@@ -15,7 +15,7 @@ def binary_search_recursive(arr, left, right, value):
     Return index of the value found else return None
     '''
     if arr and left <= right:
-        middle = (left + right) / 2
+        middle = left + (right - left) / 2
         if arr[middle] == value:
             return middle
         if arr[middle] > value:
@@ -32,7 +32,7 @@ def binary_search_iterative(arr, left, right, value):
     '''
     if arr:
         while left <= right:
-            middle = (left + right) / 2 # left + (right - left) / 2
+            middle = left + (right - left) / 2
             if arr[middle] == value:
                 return middle
             elif arr[middle] > value:
