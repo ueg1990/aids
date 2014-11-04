@@ -30,9 +30,9 @@ def binary_search_iterative(arr, left, right, value):
     Return index of the value of found else return None
     
     '''
-    if arr: 
+    if arr:
         while left <= right:
-            middle = (left + right) / 2
+            middle = (left + right) / 2 # left + (right - left) / 2
             if arr[middle] == value:
                 return middle
             elif arr[middle] > value:
