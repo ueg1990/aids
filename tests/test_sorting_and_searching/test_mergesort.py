@@ -13,8 +13,7 @@ class MergesortTestCase(unittest.TestCase):
     def test_mergesort(self):
         result = mergesort(self.example_1)
         self.assertEqual(result,[0,1,2,3,4,5,5,6,7,18,19])
-
-
+        
     def tearDown(self):
         pass
 
