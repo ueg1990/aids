@@ -4,21 +4,33 @@ Time complexity: O(n * log n)
 '''
 
 
-def mergesort(arr, left, right):
+def mergesort(arr):
     '''
     Sort array using  mergesort
     
     '''
-    if left < right:
-        middle = left + (right - left) /2
-        mergesort(arr, left, middle)
-        mergesort(arr, middle+1, right)
-        return merge(arr, left, mid, right)
+    if len(arr) > 1:		
+		mid = len(arr) / 2
+		left = mergesort(arr[:mid])
+		right = mergesort(arr[mid:])
+		return merge(left, right)
+	return arr
     
 
-def merge(arr, left, mid, right):
+def merge(left, right):
     '''
     Merge sorted arrays
     
     '''
-    pass
+    result = []
+	i,j = 0,0
+	while i <= len(left) - 1 and j <= len(right) - 1:
+		if left[i] <= right[j]:
+			result.append(left[i])
+			i += 1
+		else:
+			result.append(right[j])
+			j += 1
+	result.extend(left[i:])
+	result.extend(right[j:])
+	return result
