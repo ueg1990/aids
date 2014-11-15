@@ -4,13 +4,17 @@ Time complexity: O(n * log n)
 '''
 
 
-def mergesort(arr):
+def mergesort(arr, left, right):
     '''
     Sort array using  mergesort
     
     '''
-    pass
+    if left < right:
+        middle = left + (right - left) /2
+        mergesort(arr, left, middle)
+        mergesort(arr, middle+1, right)
+        return merge(arr, left, right)
     
 
-def _merge(arr):
+def merge(arr, left, right):
     pass
