@@ -13,8 +13,12 @@ def mergesort(arr, left, right):
         middle = left + (right - left) /2
         mergesort(arr, left, middle)
         mergesort(arr, middle+1, right)
-        return merge(arr, left, right)
+        return merge(arr, left, mid, right)
     
 
-def merge(arr, left, right):
+def merge(arr, left, mid, right):
+    '''
+    Merge sorted arrays
+    
+    '''
     pass
