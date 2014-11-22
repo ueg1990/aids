@@ -10,7 +10,7 @@ class QuicksortTestCase(unittest.TestCase):
     def setUp(self):
         self.example_1 = [18,5,3,1,19,6,0,7,4,2,5]
 
-    def test_mergesort(self):
+    def test_quicksort(self):
         quicksort(self.example_1)
         self.assertEqual(self.example_1,[0,1,2,3,4,5,5,6,7,18,19])
         
