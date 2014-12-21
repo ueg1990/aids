@@ -31,7 +31,7 @@ class StackTestCase(unittest.TestCase):
 		
 	def test_stack_size(self):
 		self.test_stack.push(1)
-		self.assertEqual(self.test_stack.size(), 1)
+		self.assertEqual(len(self.test_stack), 1)
 
     def tearDown(self):
         pass
