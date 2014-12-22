@@ -29,7 +29,7 @@ class StackTestCase(unittest.TestCase):
 		self.test_stack.push(1)
 		self.assertEqual(self.test_stack.pop(), 1)
 		
-	def test_stack_size(self):
+	def test_stack_len(self):
 		self.test_stack.push(1)
 		self.assertEqual(len(self.test_stack), 1)
 
