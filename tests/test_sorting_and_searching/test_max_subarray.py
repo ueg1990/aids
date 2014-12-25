@@ -12,13 +12,13 @@ class MaxSubArrayTestCase(unittest.TestCase):
         pass
 
     def test_all_positive(self):
-        pass
+        self.assertEqual(max_subarray([2,4,3,6,1,7]), (23, 0, 5))
 
     def test_all_negative(self):
-        pass
+        self.assertEqual(max_subarray([-2,-4,-3,-6,-1,-7]), (-1, 4, 4))
 
     def test_positive_and_negative(self):
-        pass
+        self.assertEqual(max_subarray([-2, 11, -4, 13, -5, 2]), (20, 1, 3))
 
     def tearDown(self):
         pass
