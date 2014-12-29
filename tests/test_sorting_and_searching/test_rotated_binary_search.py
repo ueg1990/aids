@@ -11,8 +11,11 @@ class RotatedBinarySearchTestCase(unittest.TestCase):
     def setUp(self):
         pass
 
-    def test_selection_sort(self):
+    def test_rotated_binary_search_second_half(self):
         self.assertEqual(rotated_binary_search([7,8,1,2,3,4,5], 4), 5)
+
+    def test_rotated_binary_search_first_half(self):
+        self.assertEqual(rotated_binary_search([7,8,1,2,3,5], 8), 1)
 
     def tearDown(self):
         pass
