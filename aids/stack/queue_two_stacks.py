@@ -14,12 +14,12 @@ class QueueUsingTwoStacks(object):
 		self.stack1 = Stack()
 		self.stack2 = Stack()
 
-	def __len__(self):
+	def is_empty(self):
 		'''
-		Return number of items in Queue
-
+		Return True if queue if empty else False
+		
 		'''
-		return len(self.stack1) + len(self.stack2)
+		return self.stack1.is_empty() and self.stack2.is_empty()
 
 	def enqueue(self,value):
 		'''
@@ -38,3 +38,10 @@ class QueueUsingTwoStacks(object):
 		while not self.stack1.is_empty():
 			self.stack2.push(self.stack1.pop())
 		return self.stack2.pop()
+
+	def __len__(self):
+		'''
+		Return number of items in Queue
+
+		'''
+		return len(self.stack1) + len(self.stack2)
