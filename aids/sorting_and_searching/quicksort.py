@@ -32,12 +32,12 @@ def partition(arr, left, right):
     '''
     pivot_value = arr[left]
 	index = left + 1
-	for j in range(left + 1, right+1):
+	for j in range(left + 1, right + 1):
 		if arr[j] < pivot_value:
 			arr[index], arr[j] = arr[j], arr[index]
 			index += 1
-	arr[index - 1], arr[left] = arr[left], arr[index-1]
-	return index-1
+	arr[index - 1], arr[left] = arr[left], arr[index - 1]
+	return index - 1
 	
 # Alternate implementation of the partition method
 # def partition(alist, left, right):
