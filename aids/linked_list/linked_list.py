@@ -6,7 +6,7 @@ In this module, we implement a Linked List
 
 from node import Node
 
-class LinkedList:
+class LinkedList(object):
 
     def __init__(self):
         self.head = None
