@@ -17,5 +17,31 @@ class LinkedListTestCase(unittest.TestCase):
 	def test_linked_list_is_empty(self):
 		self.assertTrue(self.test_linked_list.is_empty())
 
+	def test_linked_list_size(self):
+		self.test_linked_list.add(1)
+		self.test_linked_list.add(2)
+		self.assertEqual(self.test_linked_list.size(), 2)
+
+	def test_linked_list_add(self):
+		self.test_linked_list.add(1)
+		self.assertEqual(self.test_linked_list.head.get_data(), 1)
+
+	def test_linked_list_search(self):
+		self.test_linked_list.add(1)
+		self.test_linked_list.add(2)
+		self.test_linked_list.add(3)
+		self.test_linked_list.add(4)
+		self.assertTrue(self.test_linked_list.search(3))
+
+	def test_linked_list_search_false(self):
+		self.test_linked_list.add(1)
+		self.test_linked_list.add(2)
+		self.test_linked_list.add(3)
+		self.test_linked_list.add(4)
+		self.assertFalse(self.test_linked_list.search(11))
+
+	def test_linked_list_search_empty(self):
+		self.assertFalse(self.test_linked_list.search(3))
+
     def tearDown(self):
         pass
