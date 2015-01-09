@@ -1,6 +1,6 @@
 import unittest
 
-from aids.strings.reverse_string.py import *
+from aids.strings.reverse_string import *
 
 class ReverseStringTestCase(unittest.TestCase):
     '''
