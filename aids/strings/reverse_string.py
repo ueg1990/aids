@@ -10,9 +10,10 @@ def reverse_string_iterative(string):
 	return result
 
 def reverse_string_recursive(string):
-	if string:
-        return reverse_string_recursive(string[1:]) + string[0]
+    if string:
+    	return reverse_string_recursive(string[1:]) + string[0]
     return ''
 
 def reverse_string_pythonic(string):
 	return string[::-1]
+	
